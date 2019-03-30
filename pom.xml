@@ -9,22 +9,17 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.stackroute</groupId>
-	<artifactId>muzixservice</artifactId>
+	<artifactId>muzixapplication</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>MuzixService</name>
-	<packaging>jar</packaging>
-	<description>Demo project for Spring Boot</description>
+	<name>MuzixApplication</name>
+	<packaging>pom</packaging>
+	<description>MuzixApplicationProject</description>
 
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
 
 	<dependencies>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-mongodb</artifactId>
-		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -37,36 +32,11 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger2</artifactId>
-			<version>2.9.2</version>
-		</dependency>
-
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger-ui</artifactId>
-			<version>2.9.2</version>
-		</dependency>
-
 	</dependencies>
+	
+	<modules>
+		<module>MuzixService</module>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<configuration>
-					<useSystemClassLoader>false</useSystemClassLoader>
-				</configuration>
-			</plugin>
-
-		</plugins>
-	</build>
+	</modules>
 
 </project>
