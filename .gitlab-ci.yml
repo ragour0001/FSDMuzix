@@ -9,7 +9,7 @@ services:
 variables:
   MYSQL_DATABASE: "UserDb"
   MYSQL_URL: "jdbc:mysql://mysql/UserDb"
-  MYSQL_USER: "root"
+  MYSQL_USER: "app_root"
   MYSQL_PASSWORD: "root"
   MYSQL_ROOT_PASSWORD: "root"
   MONGO_DATABASENAME: "muzixdb"
