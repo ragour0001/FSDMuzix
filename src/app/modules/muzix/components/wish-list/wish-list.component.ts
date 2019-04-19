@@ -36,7 +36,7 @@ export class WishListComponent implements OnInit {
       console.log("Inside wishList component : deleted track :", data);
       const index = this.tracks.indexOf(track);
       this.tracks.splice(index,1);
-      this.snackbar.open(data, " ", {
+      this.snackbar.open("successfully deleted", " ", {
         duration: 1000
       });
     });

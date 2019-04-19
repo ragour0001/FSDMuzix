@@ -15,7 +15,7 @@ public class SwaggerConfiguration {
     public Docket customImplementation() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.stackroute.authenticateservice"))
+                .apis(RequestHandlerSelectors.basePackage("com.stackroute.usertrackservice"))
                 .build();
     }
 }
