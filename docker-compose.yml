@@ -1,30 +1,52 @@
 version: '3'
 services:
   authService:
-    image: ragour0001/authenticationservice:v1
+    image: ragour0001/authservicev2:v2
     restart: always
     network_mode: host
-    container_name: authServiceCon
     depends_on:
       - mysql
+      - eurekaServer
     ports:
       - 8085:8085
 
   userTrackService:
-    image: ragour0001/usertrackservice:v1
+    image: ragour0001/usertackservicev2:v1
     restart: always
     network_mode: host
-    container_name: usertrackCon
     depends_on:
       - mongo
+      - eurekaServer
     ports:
       - 8086:8086
+
+  eurekaServer:
+    image: ragour0001/eurekaservice:v1
+    restart: always
+    network_mode: host
+    ports:
+      - 9003:9003
+
+  zuulService:
+    image: ragour0001/zuulservice:v1
+    restart: always
+    network_mode: host
+    ports:
+      - 8087:8087 
+
+  orchestrationService:
+    image: ragour0001/orchestrationservice:v1
+    restart: always
+    network_mode: host
+    depends_on:
+      - eurekaServer
+    ports:
+      - 8888:8888
 
   mysql:
     image: mysql:5.5
     ports:
      - 3306:3306
-    container_name: mysql_container
     network_mode: host
     environment:
       MYSQL_ROOT_PASSWORD: root123
@@ -33,7 +55,7 @@ services:
       MYSQL_PASSWORD: root123
   
   angular:
-    image: ragour0001/muzixfrontendauthentication:v1
+    image: ragour0001/angularregister:v2
     network_mode: host
     container_name: angular-docker
     ports:

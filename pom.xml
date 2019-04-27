@@ -38,6 +38,9 @@
 
 		<module>usertrackservice</module>
 		<module>authenticationservice</module>
+    <module>eurekaserverdemo</module>
+    <module>orchestrationService</module>
+    <module>zuulservice</module>
 
 	</modules>
 

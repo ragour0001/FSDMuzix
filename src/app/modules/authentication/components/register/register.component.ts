@@ -29,10 +29,10 @@ export class RegisterComponent implements OnInit {
         this.snackbar.open("Successfully Register" , " ", {
           duration: 1000
         });
-        this.authService.saveUser(this.user).subscribe(
-          saveData => {
-            console.log("save date : ", saveData);
-          });
+        // this.authService.saveUser(this.user).subscribe(
+        //   saveData => {
+        //     console.log("save date : ", saveData);
+        //   });
       }
       this.router.navigate(["/login"]);
     },
