@@ -6,7 +6,7 @@ mat-card{
     text-align: center;
     background-color: #424242;
     margin: auto;
-    margin-bottom: 80px;
+    margin-bottom: 15vh;
 }
 
 mat-card-title{

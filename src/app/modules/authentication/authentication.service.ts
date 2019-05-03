@@ -20,7 +20,8 @@ export class AuthenticationService {
     // this.springSaveEndPoint = 
     //   "http://localhost:8085/api/v1/userservice/";  
 
-      this.springRegisterEndPoint = "http://localhost:8087/orchestrationservice/api/v1/user";  
+   // this.springRegisterEndPoint = "http://localhost:8087/orchestrationservice/api/v1/user";
+      this.springRegisterEndPoint = "http://localhost:8087/usertrackservice/api/v1/usertrackservice/register";    
       this.springLoginEndPoint = "http://localhost:8087/authenticationservice/api/v1/userservice/login";
 
   }

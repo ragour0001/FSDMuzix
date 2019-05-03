@@ -1,11 +1,16 @@
 .example-card{
     display: flex;
     flex-direction: column;
+    /* height: 45vh;
+    width: 20vw; */
     height: 60vh;
     width: 20vw;
-    margin: 1.2em;
+    /* margin: 1.2em; */
+    margin: 1em;
     text-align: center;
-    background-color: #c4c2ca42;
+    box-shadow: 3px 3px 25px black;
+    /* background-color: #c4c2ca42; */
+    background-color: #424242;
     margin-top: 10vh;
 }
 
@@ -27,7 +32,8 @@
 
 .mat-fab.mat-accent,.mat-flat-button.mat-accent,.mat-mini-fab.mat-accent,.mat-raised-button.mat-accent{
     background-color: #9c1148;
-    margin-left: 10px;
+    /* margin-left: 10px; */
+    margin-left: 2vw;
 } 
 
 

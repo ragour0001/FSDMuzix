@@ -50,14 +50,14 @@ public class UserControllerTest {
         user.setPassword("John123");
     }
 
-    @Test
+  /*  @Test
     public void testSaveUser() throws Exception {
         when(userService.saveUser(any())).thenReturn(user);
         mockMvc.perform(post("/api/v1/userservice/save")
                 .contentType(MediaType.APPLICATION_JSON).content(jsonToString(user)))
                 .andExpect(status().isCreated()).andDo(print());
         verify(userService,times(1)).saveUser(any());
-    }
+    }*/
 
     @Test
     public void testLoginSuccess() throws Exception {

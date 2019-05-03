@@ -11,6 +11,16 @@ public class User {
     @Id
     private String userName;
     private String email;
+
+  public String getPassword() {
+    return password;
+  }
+
+  public void setPassword(String password) {
+    this.password = password;
+  }
+
+  private String password;
     private List<Track> trackList;
 
     public User() {

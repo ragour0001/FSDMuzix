@@ -1,5 +1,6 @@
 package com.stackroute.usertrackservice.service;
 
+import com.stackroute.usertrackservice.config.Producer;
 import com.stackroute.usertrackservice.domain.Artist;
 import com.stackroute.usertrackservice.domain.Image;
 import com.stackroute.usertrackservice.domain.Track;
@@ -24,6 +25,9 @@ public class UserTrackServiceTest {
 
     @Mock
     private UserTrackRepository userTrackRepository;
+
+    @Mock
+    private Producer producer;
 
     private User user;
     private Track track;
